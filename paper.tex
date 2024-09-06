@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[pdftex, hidelinks,
+                pdftitle={LaTeX Paper Template},
+                pdfauthor={Ezra Singh},
+                pdfsubject={LaTeX Paper Template},
+                pdfkeywords={template}]{hyperref}
+    
+    \usepackage{bm}
+    \usepackage{caption}
+    \usepackage{listings}
+    \usepackage{pdfpages}
+    \usepackage{booktabs}
+    \usepackage{mathtools}
+    \usepackage{blindtext}
+    \usepackage{graphicx}
+    \usepackage{courier}
+    \usepackage{acronym}
+    \usepackage{amssymb}
+    \usepackage{amsthm}
+    \usepackage[capitalize, noabbrev]{cleveref}
+    \usepackage[activate={true, nocompatibility}, final,
+                tracking=true, kerning=true, spacing=true,
+                factor=1100, stretch=10, shrink=10]{microtype}
+    \microtypecontext{spacing=nonfrench}
+    \title{
+        \vspace{-1.5em}
+        \textbf{
+            \LaTeX\ Paper Template
+        }
+    }
+    \author{
+        \textbf{Ezra Singh} \\
+        \href{mailto:ezra.singh@mail.citytech.cuny.edu}
+        \texttt{<ezra.singh@mail.citytech.cuny.edu>} \\
+        New York City College of Technology
+    }
+    
+    \begin{document}
+    
+        \maketitle
+    
+        \begin{abstract} \input{sections/abstract.tex} \end{abstract}
+        
+        \tableofcontents
+        
+        \section{Introduction} \label{sec:introduction} \input{sections/introduction.tex}
+        
+    
+        \nocite{*} % TODO: remove
+        \bibliographystyle{abbrv}
+        \bibliography{paper}
+        \appendix
+    
+        \input{sections/appendices.tex}
+    
+    \end{document}
