@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "b4ckup.vscode-ts-tex"
+        "mathematic.vscode-latex",
+        "nickfode.latex-formatter",
+        "tomoki1207.pdf"
     ]
 }
