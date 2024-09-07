@@ -2,10 +2,26 @@
 default:
   @just --list
 
-# Compile latex document
+# Build PDF
+pdf PAPER:
+    #!/usr/bin/env bash
+    pushd ./papers/{{ PAPER }}
+    pdflatex \
+        -halt-on-error \
+        -draftmode \
+        paper.tex
+    bibtex paper.aux
+    pdflatex \
+        -halt-on-error \
+        -output-format=pdf \
+        paper.tex
+    popd
+  
+# Build all papers
 build:
-    latex paper.tex
-
-# Build document PDF
-pdf:
-    latex -output-format=pdf paper.tex
+    #!/usr/bin/env bash
+    for PAPER in "papers"/*; do
+        if [ -d "$PAPER" ]; then
+            just pdf $PAPER
+        fi
+    done
