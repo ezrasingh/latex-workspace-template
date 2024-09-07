@@ -1,4 +1,6 @@
 /tstex_modules
+/.direnv
+.env*
 
 build
 polyglot
