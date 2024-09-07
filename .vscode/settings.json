@@ -1,0 +1,4 @@
+{
+    "editor.defaultFormatter": "mathematic.vscode-latex",
+    "editor.formatOnSave": true
+}
