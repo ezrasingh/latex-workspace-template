@@ -1,0 +1,40 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper, twocolumn]{article}
+
+\input{pkgs.tex}
+
+\microtypecontext{spacing=nonfrench}
+\title{
+    \vspace{-1.5em}
+    \textbf{
+        \LaTeX\ Article Template
+    }
+}
+
+\author{
+    \textbf{Ezra Singh} \\
+    \href{mailto:ezra.singh@mail.citytech.cuny.edu}
+    \texttt{<ezra.singh@mail.citytech.cuny.edu>} \\
+    New York City College of Technology
+}
+    
+\begin{document}    
+    \maketitle
+    
+    \begin{abstract} 
+        \input{sections/abstract.tex}
+    \end{abstract}
+        
+    \tableofcontents
+    
+    \section{Introduction} \label{sec:introduction} \input{sections/introduction.tex}
+
+    \bibliographystyle{plain}
+    \bibliography{paper}
+    
+    \appendix
+    \begin{appendices}
+        \input{sections/appendices.tex}
+    \end{appendices}    
+\end{document}

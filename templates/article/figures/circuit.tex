@@ -1,0 +1,22 @@
+
+\begin{figure}[H]
+\begin{circuitikz}[american] \draw
+    (0,0)
+        to[
+            voltage source, 
+            v={$V_{s}=$\SI{12}{\volt}}
+        ] (0,4)
+        to[
+            switch, 
+            i_>=$I$
+        ] (4, 4) 
+        to[
+            R={$R_{1}=$\SI{1}{\kilo\ohm}},
+        ] (4, 0)
+        to[
+            R={$R_{2}=$\SI{200}{\ohm}}, 
+        ] (0,0)
+;
+\end{circuitikz}
+\caption{Example DC circuit}
+\end{figure}
