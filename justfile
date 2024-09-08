@@ -22,6 +22,6 @@ build:
     #!/usr/bin/env bash
     for PAPER in "papers"/*; do
         if [ -d "$PAPER" ]; then
-            just pdf $PAPER
+            just pdf $(basename $PAPER)
         fi
     done
