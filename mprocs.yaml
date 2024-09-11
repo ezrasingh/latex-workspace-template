@@ -1,0 +1,7 @@
+procs:
+  bib:
+    shell: watchexec -e bib just prep
+    autostart: true
+  pdf:
+    shell: watchexec -d 2s -p -e tex,sty just build
+    autostart: true

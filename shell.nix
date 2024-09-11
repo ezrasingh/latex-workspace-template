@@ -5,5 +5,5 @@ let
 
 in pkgs.mkShell {
   name = "latex-development-environment";
-  buildInputs = with pkgs; [ texliveFull just ];
+  buildInputs = with pkgs; [ texliveFull just watchexec mprocs ];
 }
