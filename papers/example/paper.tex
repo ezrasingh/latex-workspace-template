@@ -2,7 +2,7 @@
 % !TEX encoding = UTF-8 Unicode
 \documentclass[a4paper, twocolumn]{article}
 
-\input{pkgs.tex}
+\input{preamble.tex}
 
 \microtypecontext{spacing=nonfrench}
 \title{
@@ -14,27 +14,21 @@
 
 \author{
     \textbf{Ezra Singh} \\
-    \href{mailto:ezra.singh@mail.citytech.cuny.edu}
-    \texttt{<ezra.singh@mail.citytech.cuny.edu>} \\
-    New York City College of Technology
+    \href{mailto:singhezra@gmail.com}
+    \texttt{<singhezra@gmail.com>}
 }
-    
-\begin{document}    
-    \maketitle
-    
-    \begin{abstract} 
-        \input{sections/abstract.tex}
-    \end{abstract}
-        
-    \tableofcontents
-    
-    \section{Introduction} \label{sec:introduction} \input{sections/introduction.tex}
 
-    \bibliographystyle{plain}
-    \bibliography{paper}
-    
-    \appendix
-    \begin{appendices}
-        \input{sections/appendices.tex}
-    \end{appendices}    
+\begin{document}
+\maketitle
+
+\input{sections/abstract.tex}
+
+\tableofcontents
+
+\input{sections/introduction.tex}
+
+\bibliographystyle{plain}
+\bibliography{paper}
+
+\input{sections/appendices.tex}
 \end{document}
