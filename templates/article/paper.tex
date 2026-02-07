@@ -1,0 +1,34 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper, twocolumn]{article}
+
+\input{preamble.tex}
+
+\microtypecontext{spacing=nonfrench}
+\title{
+    \vspace{-1.5em}
+    \textbf{
+        \LaTeX\ Article Template
+    }
+}
+
+\author{
+    \textbf{Ezra Singh} \\
+    \href{mailto:singhezra@gmail.com}
+    \texttt{<singhezra@gmail.com>}
+}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract.tex}
+
+\tableofcontents
+
+\input{sections/introduction.tex}
+
+\bibliographystyle{plain}
+\bibliography{paper}
+
+\input{sections/appendices.tex}
+\end{document}
